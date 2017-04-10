@@ -258,7 +258,7 @@ else just return the results.
 */
 function every(collect, action){
     var results = true;
-if (typeof(action) !== "function") action = _.identity;
+if (typeof(action) !== "function") action = identity;
 
 each(collect, function(value, index, array) {
     if(action(value, index, array) === false) {
@@ -309,7 +309,7 @@ module.exports.some = some;
 *@param {action}
 *@param {seed}
 */
-var reduce = function(col, fun, seed) {
+   function reduce (col, fun, seed) {
  let combined=seed;
  let i=0;
    if(combined===undefined){
@@ -321,7 +321,7 @@ var reduce = function(col, fun, seed) {
     combined=fun(combined,col[i],i,col);
    }  return combined;
  }
-
+module.exports.reduce=reduce;
 
 /* extend takes more than one object agruments to have each properties copied
 *Example -  *   var data = {a:"one"};
