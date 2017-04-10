@@ -134,7 +134,7 @@ var filtered = [];
 });
     return filtered;
 }
-module.exports.filtered = filter;
+module.exports.filter = filter;
 
 /* created a function reject with two parameters array and funtwo.
 created a emety array named filtered.
