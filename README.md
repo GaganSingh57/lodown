@@ -25,6 +25,7 @@ You'll then use your lodown library to solve problems in the next project.
     
 5. Once you're done creating your `package.json` file, go to the command line and install the required test libraries by running the following command:
     
+
         npm install i -D mocha chai sinon istanbul
 
 6. Implement your library in the file `index.js`. Remember that `index.js` is a Node.js module, so you must export your API using `module.exports`, for example:
